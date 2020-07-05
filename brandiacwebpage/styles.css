@@ -1,0 +1,241 @@
+body {
+  background-color: #f3f5fa;
+}
+
+#logo {
+  height: 5rem;
+  width: 15rem;
+}
+/*--------------------------------------------------------------
+# Hero 
+--------------------------------------------------------------*/
+
+#test {
+	background: url('ecomm.jpg') 50% 50% no-repeat;
+	background-size: cover;
+	height: 500px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#description{
+	color:white;
+	padding:20%;
+	font-size: 3vw;
+	text-shadow: 0.2vw 0.2vw grey;
+}
+
+
+
+/*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+section {
+  padding: 60px 0;
+  overflow: hidden;
+}
+
+.section-bg {
+  background-color: #f3f5fa;
+}
+
+.section-title {
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.section-title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  color: black;
+}
+
+.section-title h2::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: #ddd;
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
+
+.section-title h2::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #47b2e4;
+  bottom: 0;
+  left: calc(50% - 20px);
+}
+
+.section-title p {
+  margin-bottom: 0;
+}
+
+
+@media only screen and (device-width : 375px) and (device-height : 812px) {
+  .section-title h2 p {
+  margin-top: 10px;
+}
+
+}
+
+
+/*--------------------------------------------------------------
+# About 
+--------------------------------------------------------------*/
+
+
+
+.about .icon-box {
+  box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
+  padding: 50px 30px;
+  transition: all ease-in-out 0.4s;
+  background: #fff;
+}
+
+.about .icon-box .icon {
+  margin-bottom: 10px;
+}
+
+.about .icon-box .icon i {
+  color: black;
+  font-size: 36px;
+  transition: 0.3s;
+}
+
+.about .icon-box h4 {
+  font-weight: 500;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+.about .icon-box h4 a {
+  color: black;
+  transition: ease-in-out 0.3s;
+}
+
+.about .icon-box p {
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+/*--------------------------------------------------------------
+# Shops
+--------------------------------------------------------------*/
+
+.showcase .showcase-text {
+  padding: 3rem;
+}
+
+.showcase .showcase-img {
+  min-height: 30rem;
+  background-size: cover;
+}
+
+@media (min-width: 768px) {
+  .showcase .showcase-text {
+    padding: 7rem;
+  }
+}
+
+/*--------------------------------------------------------------
+# Contact Section
+--------------------------------------------------------------*/
+
+.contact-section {
+  padding-top: 5rem;
+  background-color: #f3f5fa;
+}
+.contact-section .card {
+  border: 0;
+  border-bottom: 0.25rem solid  #47b2e4;
+}
+.contact-section .card h4 {
+  font-size: 0.8rem;
+  font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+}
+.contact-section .card hr {
+  border-color:  #47b2e4;
+  border-width: 0.25rem;
+  width: 3rem;
+}
+
+/*--------------------------------------------------------------
+# Footer 
+--------------------------------------------------------------*/
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;  
+  background-color: #f8f9fa;  
+  padding-top: 0.5rem;
+}
+
+@media only screen and (device-width : 375px) and (device-height : 812px) {
+  footer {
+  justify-content: center;
+}
+
+}
+
+
+/*--------------------------------------------------------------
+# Navbar 
+--------------------------------------------------------------*/
+ 
+  #mainNav .navbar-brand {
+    padding: 0.5rem 0;
+    color: black;
+  }
+  #mainNav .nav-link {
+    transition: none;
+    padding: 2rem 1.5rem;
+    color: black;
+  }
+  #mainNav .nav-link:hover {
+    color: rgba(255, 255, 255, 0.75);
+  }
+  #mainNav .nav-link:active {
+    color: #fff;
+  }
+  #mainNav.navbar-shrink {
+    background-color: #fff;
+  }
+  #mainNav.navbar-shrink .navbar-brand {
+    color: #000000;
+  }
+  #mainNav.navbar-shrink .nav-link {
+    color: #000000;
+    padding: 1.5rem 1.5rem 1.25rem;
+    border-bottom: 0.25rem solid transparent;
+  }
+  #mainNav.navbar-shrink .nav-link:hover {
+    color: #47b2e4;
+  }
+  #mainNav.navbar-shrink .nav-link:active {
+    color: #47b2e4;
+  }
+  #mainNav.navbar-shrink .nav-link.active {
+    color: #47b2e4;
+    outline: none;
+    border-bottom: 0.25rem solid #47b2e4;
+  }
+}
+
+
+
